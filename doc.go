@@ -14,9 +14,9 @@ package testify
 // blank imports help docs.
 import (
 	// assert package
-	_ "github.com/stretchr/testify/assert"
+	_ "go.intra.xiaojukeji.com/golang/testify/assert"
 	// http package
-	_ "github.com/stretchr/testify/http"
+	_ "go.intra.xiaojukeji.com/golang/testify/http"
 	// mock package
-	_ "github.com/stretchr/testify/mock"
+	_ "go.intra.xiaojukeji.com/golang/testify/mock"
 )

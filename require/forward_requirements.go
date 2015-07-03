@@ -3,7 +3,7 @@ package require
 import (
 	"time"
 
-	"github.com/stretchr/testify/assert"
+	"go.intra.xiaojukeji.com/golang/testify/assert"
 )
 
 type Assertions struct {
