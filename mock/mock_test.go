@@ -2,7 +2,7 @@ package mock
 
 import (
 	"errors"
-	"github.com/stretchr/testify/assert"
+	"go.intra.xiaojukeji.com/golang/testify/assert"
 	"testing"
 	"time"
 )

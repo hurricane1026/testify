@@ -16,13 +16,13 @@ Get started:
 
   * Install testify with [one line of code](#installation), or [update it with another](#staying-up-to-date)
   * For an introduction to writing test code in Go, see our [blog post article](http://blog.stretchr.com/2014/03/05/test-driven-development-specifically-in-golang/) or check out  http://golang.org/doc/code.html#Testing
-  * Check out the API Documentation http://godoc.org/github.com/stretchr/testify
-  * To make your testing life easier, check out our other project, [gorc](http://github.com/stretchr/gorc)
+  * Check out the API Documentation http://godoc.org/go.intra.xiaojukeji.com/golang/testify
+  * To make your testing life easier, check out our other project, [gorc](http://go.intra.xiaojukeji.com/golang/gorc)
   * A little about [Test-Driven Development (TDD)](http://en.wikipedia.org/wiki/Test-driven_development)
 
 
 
-[`assert`](http://godoc.org/github.com/stretchr/testify/assert "API documentation") package
+[`assert`](http://godoc.org/go.intra.xiaojukeji.com/golang/testify/assert "API documentation") package
 -------------------------------------------------------------------------------------------
 
 The `assert` package provides some helpful methods that allow you to write better test code in Go.
@@ -38,7 +38,7 @@ package yours
 
 import (
   "testing"
-  "github.com/stretchr/testify/assert"
+  "go.intra.xiaojukeji.com/golang/testify/assert"
 )
 
 func TestSomething(t *testing.T) {
@@ -74,7 +74,7 @@ package yours
 
 import (
   "testing"
-  "github.com/stretchr/testify/assert"
+  "go.intra.xiaojukeji.com/golang/testify/assert"
 )
 
 func TestSomething(t *testing.T) {
@@ -107,14 +107,14 @@ The `require` package provides same global functions as the `assert` package, bu
 See [t.FailNow](http://golang.org/pkg/testing/#T.FailNow) for details.
 
 
-[`http`](http://godoc.org/github.com/stretchr/testify/http "API documentation") package
+[`http`](http://godoc.org/go.intra.xiaojukeji.com/golang/testify/http "API documentation") package
 ---------------------------------------------------------------------------------------
 
-The `http` package contains test objects useful for testing code that relies on the `net/http` package.  Check out the [(deprecated) API documentation for the `http` package](http://godoc.org/github.com/stretchr/testify/http).
+The `http` package contains test objects useful for testing code that relies on the `net/http` package.  Check out the [(deprecated) API documentation for the `http` package](http://godoc.org/go.intra.xiaojukeji.com/golang/testify/http).
 
 We recommend you use [httptest](http://golang.org/pkg/net/http/httptest) instead.
 
-[`mock`](http://godoc.org/github.com/stretchr/testify/mock "API documentation") package
+[`mock`](http://godoc.org/go.intra.xiaojukeji.com/golang/testify/mock "API documentation") package
 ----------------------------------------------------------------------------------------
 
 The `mock` package provides a mechanism for easily writing mock objects that can be used in place of real objects when writing test code.
@@ -126,7 +126,7 @@ package yours
 
 import (
   "testing"
-  "github.com/stretchr/testify/mock"
+  "go.intra.xiaojukeji.com/golang/testify/mock"
 )
 
 /*
@@ -176,11 +176,11 @@ func TestSomething(t *testing.T) {
 }
 ```
 
-For more information on how to write mock code, check out the [API documentation for the `mock` package](http://godoc.org/github.com/stretchr/testify/mock).
+For more information on how to write mock code, check out the [API documentation for the `mock` package](http://godoc.org/go.intra.xiaojukeji.com/golang/testify/mock).
 
 You can use the [mockery tool](http://github.com/vektra/mockery) to autogenerate the mock code against an interface as well, making using mocks much quicker.
 
-[`suite`](http://godoc.org/github.com/stretchr/testify/suite "API documentation") package
+[`suite`](http://godoc.org/go.intra.xiaojukeji.com/golang/testify/suite "API documentation") package
 -----------------------------------------------------------------------------------------
 
 The `suite` package provides functionality that you might be used to from more common object oriented languages.  With it, you can build a testing suite as a struct, build setup/teardown methods and testing methods on your struct, and run them with 'go test' as per normal.
@@ -191,8 +191,8 @@ An example suite is shown below:
 // Basic imports
 import (
     "testing"
-    "github.com/stretchr/testify/assert"
-    "github.com/stretchr/testify/suite"
+    "go.intra.xiaojukeji.com/golang/testify/assert"
+    "go.intra.xiaojukeji.com/golang/testify/suite"
 )
 
 // Define the suite, and absorb the built-in basic suite
@@ -222,9 +222,9 @@ func TestExampleTestSuite(t *testing.T) {
 }
 ```
 
-For a more complete example, using all of the functionality provided by the suite package, look at our [example testing suite](https://github.com/stretchr/testify/blob/master/suite/suite_test.go)
+For a more complete example, using all of the functionality provided by the suite package, look at our [example testing suite](https://go.intra.xiaojukeji.com/golang/testify/blob/master/suite/suite_test.go)
 
-For more information on writing suites, check out the [API documentation for the `suite` package](http://godoc.org/github.com/stretchr/testify/suite).
+For more information on writing suites, check out the [API documentation for the `suite` package](http://godoc.org/go.intra.xiaojukeji.com/golang/testify/suite).
 
 `Suite` object has assertion methods:
 
@@ -232,7 +232,7 @@ For more information on writing suites, check out the [API documentation for the
 // Basic imports
 import (
     "testing"
-    "github.com/stretchr/testify/suite"
+    "go.intra.xiaojukeji.com/golang/testify/suite"
 )
 
 // Define the suite, and absorb the built-in basic suite
@@ -268,14 +268,14 @@ Installation
 
 To install Testify, use `go get`:
 
-    * Latest version: go get github.com/stretchr/testify
+    * Latest version: go get go.intra.xiaojukeji.com/golang/testify
     * Specific version: go get gopkg.in/stretchr/testify.v1
 
 This will then make the following packages available to you:
 
-    github.com/stretchr/testify/assert
-    github.com/stretchr/testify/mock
-    github.com/stretchr/testify/http
+    go.intra.xiaojukeji.com/golang/testify/assert
+    go.intra.xiaojukeji.com/golang/testify/mock
+    go.intra.xiaojukeji.com/golang/testify/http
 
 Import the `testify/assert` package into your code using this template:
 
@@ -284,7 +284,7 @@ package yours
 
 import (
   "testing"
-  "github.com/stretchr/testify/assert"
+  "go.intra.xiaojukeji.com/golang/testify/assert"
 )
 
 func TestSomething(t *testing.T) {
@@ -299,7 +299,7 @@ func TestSomething(t *testing.T) {
 Staying up to date
 ==================
 
-To update Testify to the latest version, use `go get -u github.com/stretchr/testify`.
+To update Testify to the latest version, use `go get -u go.intra.xiaojukeji.com/golang/testify`.
 
 ------
 

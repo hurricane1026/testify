@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/stretchr/objx"
-	"github.com/stretchr/testify/assert"
+	"go.intra.xiaojukeji.com/golang/objx"
+	"go.intra.xiaojukeji.com/golang/testify/assert"
 )
 
 // TestingT is an interface wrapper around *testing.T

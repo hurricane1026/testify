@@ -1,7 +1,7 @@
 package testify
 
 import (
-	"github.com/stretchr/testify/assert"
+	"go.intra.xiaojukeji.com/golang/testify/assert"
 	"testing"
 )
 
